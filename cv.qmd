@@ -5,18 +5,17 @@ validate-yaml: false
 bibliography:
     pubs: assets/pubs.bib
     preprints: assets/preprints.bib
-    # software: assets/software.bib
+    software: assets/software.bib
     conferences: assets/conferences.bib
 bibliographystyle: apa
 nocite:
     pubs: '@*'
     preprints: '@*'
-    # software: '@*'
+    software: '@*'
     conferences: '@*'
 ---
 
 ```{=html}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div style="justify-content: center; display: flex; align-items: center;">
     <a href="latex/main.pdf" download="chris_donovan_cv">
         <button class="btn">
@@ -31,7 +30,7 @@ nocite:
 
 ## Research Statement
 
-I am a food systems data scientist with an interdisciplinary background in environmental science, economics, and behavior. My strengths include quantitative analysis and modeling, with a particular emphasis on open data and reproducible workflows. I contribute to the advancement of scientific rigor and accessibility by developing and applying methods that enable data to be shared, validated, and used across disciplines. Through this work, I help generate insights that support more sustainable, transparent, and equitable food systems.
+I am a food systems data scientist with an interdisciplinary background in environmental science, economics, and behavior. My strengths include quantitative analysis and modeling, with a particular emphasis on open data and reproducible workflows. I contribute to the advancement of scientific rigor and accessibility by developing and applying methods that enable data to be shared, validated, and used across disciplines. Through this work, I help generate insights that support more sustainable, transparent, and equitable social-ecological systems.
 
 ## Education
 
@@ -134,6 +133,11 @@ I am a food systems data scientist with an interdisciplinary background in envir
 ::: {#refs-preprints}
 :::
 
+## Conference Presentations
+
+::: {#refs-conferences}
+:::
+
 ## Software
 
 * <a href="https://www.github.com/tshrum/rebl" target="_blank">REBL Scale R Package</a>
@@ -143,9 +147,4 @@ I am a food systems data scientist with an interdisciplinary background in envir
 * <a href="https://www.github.com/Food-Systems-Research-Institute/SMdata" target="_blank">SMdata R Package</a>
 * <a href="https://www.github.com/ChrisDonovan307/grade_analysis_app" target="_blank">Grade Analysis Shiny App</a>
 * <a href="https://www.github.com/ChrisDonovan307/projecter" target="_blank">Projector R Package</a>
-
-## Conference Presentations
-
-::: {#refs-conferences}
-:::
 

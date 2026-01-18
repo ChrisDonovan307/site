@@ -1,0 +1,6 @@
+title: Link Block
+author: Chris Donovan
+version: 1.0.0
+contributes:
+  filters:
+    - link_block.lua

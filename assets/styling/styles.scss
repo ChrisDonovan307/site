@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 
 /*-- scss:defaults --*/
-$h2-font-size:          1.6rem !default;
-$headings-font-weight:  500 !default;
+$h2-font-size: 1.6rem !default;
+$headings-font-weight: 500 !default;
 
 /*-- color variables --*/
 $theme-text: #282828;
@@ -17,7 +18,7 @@ $theme-darkest-beige: #a89984;
 $theme-orange: #d65d0e;
 $theme-blue: #458588;
 $theme-green: #427b58;
-$theme-light-green: #7cb893;
+$theme-light-green: #86be9c;
 $theme-purple: #b16286;
 
 $theme-dark-background: #32302f;
@@ -33,63 +34,69 @@ $grid-column-gutter-width: 1.5rem !default; // The gutter that appears between t
 
 /*-- scss:rules --*/
 body {
-  color: $theme-text;
-  background-color: $theme-background;
-  font-family: "Lora";
-//   width: 1200px;
+    color: $theme-text;
+    background-color: $theme-background;
+    font-family: "Lora";
+    //   width: 1200px;
 }
 
 // Hyperlinks
 a {
-  color: $theme-green;
+    color: $theme-green;
 }
 
 a:hover {
-  color: $theme-purple;
+    color: $theme-purple;
 }
 
 .nav-footer a {
-  color: $theme-green;
+    color: $theme-green;
 }
 
 .nav-footer a:hover {
-  color: $theme-purple;
+    color: $theme-purple;
 }
 
 h2 {
-  border-bottom: 1.5px solid $theme-dark-background;
+    border-bottom: 1.5px solid $theme-dark-background;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h3 {
-  border-bottom: 1px solid $theme-darkest-beige;
+    border-bottom: 1px solid $theme-darkest-beige;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h4 {
-  color: #000;
+    color: #000;
 }
 
 // Turn images into links
 div.link-block {
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-  background-color: $theme-background-lighter;
-  border-radius: 3px;
-  border: 1px solid $theme-background-alt;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  margin: 10px; /* outsides: top right bottom left */
-  width: 100%;
+    background-color: $theme-background-lighter;
+    border-radius: 3px;
+    border: 1px solid $theme-background-alt;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 10px;
+    /* outsides: top right bottom left */
+    width: 100%;
 }
 
 div.link-block:hover,
-a:hover > div.link-block {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Thicker, darker shadow */
+a:hover>div.link-block {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Thicker, darker shadow */
 }
 
 // // images within link-block
@@ -101,56 +108,61 @@ a:hover > div.link-block {
 
 // Remove link styling from anchors wrapping link-blocks
 a:has(> div.link-block) {
-  text-decoration: none !important;
-  color: inherit;
+    text-decoration: none !important;
+    color: inherit;
 }
 
 // For hexes only
 .link-block.hex {
-  clip-path: polygon(
-    50% 0%,   /* top point */
-    100% 25%, /* top-right */
-    100% 75%, /* bottom-right */
-    50% 100%,  /* bottom point */
-    0% 75%,  /* bottom-left */
-    0% 25%   /* top-left */
-  );
-  overflow: hidden;
-  border-radius: 0;
-  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
-  transition: filter 0.2s, transform 0.2s;
-  cursor: pointer;
+    clip-path: polygon(50% 0%,
+            /* top point */
+            100% 25%,
+            /* top-right */
+            100% 75%,
+            /* bottom-right */
+            50% 100%,
+            /* bottom point */
+            0% 75%,
+            /* bottom-left */
+            0% 25%
+            /* top-left */
+        );
+    overflow: hidden;
+    border-radius: 0;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+    transition: filter 0.2s, transform 0.2s;
+    cursor: pointer;
 
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-  }
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
 }
 
 //  Make darker
 .link-block.darker img {
-  filter: brightness(95%);
-  transition: filter 0.2s;
+    filter: brightness(95%);
+    transition: filter 0.2s;
 }
 
 // project-block
 div.project-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  max-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-height: 250px;
 }
 
 // images within project-block
 div.project-block img {
-  border: 1px solid $theme-dark-grey;
-  max-height: 160px;
-  max-width: 30%;
+    border: 1px solid $theme-dark-grey;
+    max-height: 160px;
+    max-width: 30%;
 }
 
 div.project-block p {
-  padding-top: 10px;
+    padding-top: 10px;
 }
 
 
@@ -162,166 +174,201 @@ div.project-block p {
 
 // Callouts -------------------------------------------------------------
 .callout-note {
-  background-color: $theme-grey;
-  color: #000;
-  border-color: #000 !important;
-  border-left-color: $theme-orange !important;
+    background-color: $theme-grey;
+    color: #000;
+    border-color: #000 !important;
+    border-left-color: $theme-orange !important;
 }
 
 .callout.callout-style-default .callout-header[aria-expanded="true"] {
-  background-color: $theme-darker-beige;
-  color: $theme-text;
+    background-color: $theme-darker-beige;
+    color: $theme-text;
 }
 
 .callout.callout-style-default .callout-header[aria-expanded="false"] {
-  background-color: $theme-darker-beige;
-  color: $theme-text;
+    background-color: $theme-darker-beige;
+    color: $theme-text;
 }
 
 div.callout-note.callout-titled .callout-icon::before {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="fill: rgb(214, 93, 14)" class="bi bi-info-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/></svg>');
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="fill: rgb(214, 93, 14)" class="bi bi-info-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/></svg>');
 }
 
 /* Navigation bar ----------------------------------------------------- */
 .navbar {
-  background-color: $theme-background-alt;
+    background-color: $theme-background-alt;
 }
 
 // main title
 .navbar-brand {
-  color: $theme-text-alt;
+    color: $theme-text-alt;
 }
 
 .navbar-brand:hover {
-  color: $theme-purple; // main title
+    color: $theme-purple; // main title
 }
 
 .navbar-brand.active {
-  color: $theme-darker-beige;
+    color: $theme-darker-beige;
 }
 
 .navbar-nav .nav-link {
-  color: $theme-text-alt;
+    color: $theme-text-alt;
 }
 
 .navbar-nav .nav-link:hover {
-  color: $theme-purple !important;
-  // text-decoration: underline;
+    color: $theme-purple !important;
+    // text-decoration: underline;
 }
 
 .navbar-nav .nav-link.active {
-  color: $theme-green;
-  // text-decoration: underline;
+    color: $theme-green;
+    // text-decoration: underline;
 }
 
 // Hamburger icon - This is the worst
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='%23f2e5bc' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='%23f2e5bc' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
 }
 
 // Search icon
 .navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon {
-  width: 26px;
-  height: 26px;
-  color: $theme-text-alt;
-  opacity: 1;
+    width: 26px;
+    height: 26px;
+    color: $theme-text-alt;
+    opacity: 1;
 }
+
 .navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon:hover {
-  color: $theme-purple !important;
+    color: $theme-purple !important;
 }
 
 // GitHub Icon, but not search
 .navbar .quarto-navbar-tools .quarto-navigation-tool {
-  color: $theme-text-alt;
-  // how to make bigger?
+    color: $theme-text-alt;
+    // how to make bigger?
 }
+
 .navbar .quarto-navbar-tools .quarto-navigation-tool:hover {
-  color: $theme-purple !important; // Not working
+    color: $theme-purple !important; // Not working
 }
 
 
 // Sidebar -------------------------------------------------------------------------
-.sidebar nav[role='doc-toc'] ul > li > a.active {
-  color: $theme-green !important;
-  border-left: $theme-green !important;
+.sidebar nav[role='doc-toc'] ul>li>a.active {
+    color: $theme-green !important;
+    border-left: $theme-green !important;
 }
 
-.sidebar nav[role='doc-toc'] ul > li > a:hover {
-  color: $theme-purple !important;
-  border-left: $theme-purple !important;
+.sidebar nav[role='doc-toc'] ul>li>a:hover {
+    color: $theme-purple !important;
+    border-left: $theme-purple !important;
 }
 
 // Second level - this is janky though
-.sidebar nav[role='doc-toc'] ul > li > ul > li > a.active {
-  color: $theme-green !important;
-  border-left: $theme-green !important;
+.sidebar nav[role='doc-toc'] ul>li>ul>li>a.active {
+    color: $theme-green !important;
+    border-left: $theme-green !important;
 }
 
-.sidebar nav[role='doc-toc'] ul > li > ul > li > a:hover {
-  color: $theme-purple !important;
-  border-left: $theme-purple !important;
+.sidebar nav[role='doc-toc'] ul>li>ul>li>a:hover {
+    color: $theme-purple !important;
+    border-left: $theme-purple !important;
 }
 
 
 // Github Dropdown
 .dropdown-item {
-  background-color: $theme-background;
-  border: 1px solid $theme-background-alt;
+    background-color: $theme-background;
+    border: 1px solid $theme-background-alt;
 }
+
 .dropdown-item:hover {
-  background-color: $theme-darker-beige;
+    background-color: $theme-darker-beige;
 }
 
 
 // Text boxes and such -------------------------------------------------------------
 
 .container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .image-box {
-  width: 30%;
+    width: 30%;
 }
 
 .image-box img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .text-box {
-  padding: 10px;
+    padding: 10px;
 }
 
 .figure-float {
-  float: left; 
-  width: 50%; 
-  margin: 0px !important;
+    float: left;
+    width: 50%;
+    margin: 0px !important;
 }
 
 
 // Code blocks -----------------------------------------------
-code, pre code {
-  background-color: $theme-background-alt !important;
-  // color: $theme-dark-foreground !important;
+code,
+pre code {
+    background-color: $theme-background-alt !important;
+    // color: $theme-dark-foreground !important;
 }
 
 
 // Button ----------------------------------------------------
 
 .btn {
-  color: #000;
-  background-color: $theme-light-green;
-  border: 1px solid $theme-background-alt;
-  border-radius: 3px;
+    color: #000;
+    background-color: $theme-light-green;
+    border: 1px solid $theme-background-alt;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
 }
 
 .btn:hover {
-  color: #000;
-  background-color: $theme-green;
-  // background-color: $theme-background-lighter;
-  cursor: pointer;
-  border: 1px solid #000;
-  border-radius: 3px;
+    color: #000;
+    background-color: $theme-green;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 3px;
+    transform: translateY(-3px);
+}
+
+
+// Social Icons ------------------------------------------------------
+.social-icons i {
+    color: $theme-green;
+    font-size: 2.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons a:hover i {
+    color: $theme-purple;
+    transform: translateY(-3px);
+}
+
+.spirit {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(26%) saturate(695%) hue-rotate(90deg) brightness(97%) contrast(86%);
+    height: 2.5rem;
+    width: auto;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.spirit:hover {
+    filter: brightness(0) saturate(100%) invert(50%) sepia(7%) saturate(3064%) hue-rotate(280deg) brightness(89%) contrast(83%);
+    transform: translateY(-3px);
 }
