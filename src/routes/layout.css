@@ -1,1 +1,6 @@
 @import 'tailwindcss';
+
+@theme {
+    --color-brand-500: #a70c0c;
+}
+/* use with var(--color-brand-500) */
