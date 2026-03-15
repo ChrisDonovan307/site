@@ -5,6 +5,9 @@ import { sveltekit } from '@sveltejs/kit/vite';
 
 export default defineConfig({
 	plugins: [tailwindcss(), sveltekit()],
+	optimizeDeps: {
+		exclude: ['bits-ui', 'svelte-toc']
+	},
 	test: {
 		expect: { requireAssertions: true },
 		projects: [

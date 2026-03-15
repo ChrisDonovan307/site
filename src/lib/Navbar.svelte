@@ -3,36 +3,30 @@
   import { page } from '$app/state';
 
   function navClass(path: string) {
-    return page.url.pathname === path ? 'font-semibold' : '';
+    return page.url.pathname === path ? 'text-brand-green' : '';
   }
 </script>
 
-<header>
-  <nav class="container ml-3 py-3 flex items-center justify-between">
-    <a href="/" class="text-xl font-bold">My Site</a>
-
-    <ul class="flex gap-6">
+<header class="bg-background-alt text-foreground-alt">
+  <nav class="container max-w-8xl mx-auto py-4 flex justify-between text-lg">
+    <ul class="flex gap-6 items-baseline">
+      <li>
+        <a href="/" class="text-2xl font-semibold hover:text-current">Chris Donovan</a>
+      </li>
       <li>
         <a href="/" class={navClass('/')}>Home</a>
       </li>
       <li>
-        <a href="/about" class={navClass('/about')}>About</a>
+        <a href="/cv" class={navClass('/cv')}>CV</a>
+      </li>
+    </ul>
+
+    <ul class="flex gap-6 items-center">
+      <li>
+        <a href="https://www.npr.org" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github text-2xl"></i>
+        </a>
       </li>
     </ul>
   </nav>
 </header>
-
-<style>
-  header {
-    background-color: var(--color-olive-600);
-    margin-bottom: 1rem;
-    /* height: 100px; */
-  }
-  a {
-    color: bisque;
-  }
-  a:hover {
-    color: #344937;
-    font-weight: bold;
-  }
-</style>
