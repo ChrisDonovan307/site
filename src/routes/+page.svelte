@@ -13,7 +13,7 @@
 		<img src="images/face.JPG" alt="face" class="border border-black">
 	</div>
 	<div class="col-span-8 flex flex-col justify-center gap-4">
-		<p class="px-4">{data.bio}</p>
+		<p class="px-4">{@html data.bio}</p>
 		<SocialIcons socials={data.socials} />
 	</div>
 </div>
@@ -24,7 +24,9 @@
 {#each data.projects as { group, items }}
 	<h3>{group}</h3>
 	{#each items as { title, content, link }}
-		<h4>{title}</h4>
+		{#if items.length > 1}
+			<h4>{title}</h4>
+		{/if}
 		<ul class="list-disc pl-5 mb-4">
 			<li>{@html content}</li>
 			<li>{@html link}</li>
