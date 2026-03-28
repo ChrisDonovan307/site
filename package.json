@@ -31,7 +31,6 @@
 		"bits-ui": "^2.16.4",
 		"clsx": "^2.1.1",
 		"embla-carousel-svelte": "^8.6.0",
-		"eslint": "^9.39.2",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.14.0",
 		"globals": "^17.3.0",
@@ -54,6 +53,7 @@
 		"@fontsource-variable/lora": "^5.2.8",
 		"@fontsource/lora": "^5.2.8",
 		"@fortawesome/fontawesome-free": "^7.2.0",
+		"citation-js": "^0.7.22",
 		"flowbite": "^4.0.1",
 		"flowbite-svelte": "^1.31.0",
 		"svelte-toc": "^0.6.3"

@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import SocialIcons from "$lib/SocialIcons.svelte"
-	import * as Carousel from "$lib/components/ui/carousel/index.js";
  	import * as Card from "$lib/components/ui/card/index.js";
 
 	let { data }: { data: PageData } = $props();

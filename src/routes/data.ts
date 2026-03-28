@@ -16,6 +16,11 @@ type Social = {
 	image: string;
 }
 
+type Software = {
+	link: string;
+	title: string;
+}
+
 export const projects: ProjectGroup[] = [
 	{
 		group: 'Sustainability Metrics',
@@ -113,5 +118,36 @@ export const socials: Social[] = [
 		link: 'https://gitlab.uvm.edu/Christopher.Donovan',
 		label: 'GitLab',
 		image: '<i class="fa-brands fa-gitlab"></i>'
+	}
+]
+
+export const software: Software[] = [
+	{
+		link: "https://www.github.com/tshrum/rebl",
+		title: "REBL Scale R Package"
+	},
+	{
+		link: "https://www.github.com/ChrisDonovan307/reblcalc",
+		title: "REBL Calculator Shiny App"
+	},
+	{
+		link: "https://www.github.com/Food-Systems-Research-Institute/SMexplorer",
+		title: "SMexplorer Shiny App"
+	},
+	{
+		link: "https://www.github.com/Food-Systems-Research-Institute/SMdocs",
+		title: "SMdocs Website"
+	},
+	{
+		link: "https://www.github.com/Food-Systems-Research-Institute/SMdata",
+		title: "SMdata R Package"
+	},
+	{
+		link: "https://www.github.com/ChrisDonovan307/grade_analysis_app",
+		title: "Grade Analysis Shiny App"
+	},
+	{
+		link: "https://www.github.com/ChrisDonovan307/projecter",
+		title: "Projector R Package"
 	}
 ]
