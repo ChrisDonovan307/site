@@ -57,5 +57,6 @@
 		"flowbite": "^4.0.1",
 		"flowbite-svelte": "^1.31.0",
 		"svelte-toc": "^0.6.3"
-	}
+	},
+	"license": "GPL-3.0"
 }
