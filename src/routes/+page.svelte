@@ -56,7 +56,9 @@
     transition: box-shadow 0.3s ease-in-out;
     transition: transform 0.2s ease-in-out;
     margin: 1rem;
+    padding: 1rem;
     cursor: pointer;
+    max-height: 200px;
   }
   .project-card :global([data-slot="card"]:hover) {
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);                                                                                                              
