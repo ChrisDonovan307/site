@@ -1,6 +1,6 @@
 <script>
 	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
+	// import favicon from '$lib/assets/favicon.svg';
 	import Nav from "$lib/Navbar.svelte";
 	import Footer from "$lib/Footer.svelte";
 	import '@fortawesome/fontawesome-free/css/all.min.css'
@@ -11,7 +11,7 @@
 	let { children } = $props();
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<!-- <svelte:head><link rel="icon" href={favicon} /></svelte:head> -->
 
 <div class="min-h-screen flex flex-col">
 	<Nav />

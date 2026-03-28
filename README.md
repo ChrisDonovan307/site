@@ -5,7 +5,7 @@ This is my site
 Clone:
 
 ```sh
-git clone https://www.github.com/ChrisDonovan307.git
+git clone https://www.github.com/ChrisDonovan307/site.git
 cd site
 ```
 
