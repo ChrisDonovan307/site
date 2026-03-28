@@ -1,19 +1,28 @@
 # Site
 
-This is my site.
+This is my site
+
+Clone:
 
 ```sh
-# recreate project
-npx sv@0.12.7 create --template minimal --types jsdoc --add prettier vitest="usages:unit,component" eslint sveltekit-adapter="adapter:static" playwright tailwindcss="plugins:none" --install npm sveltekit-site
+git clone https://www.github.com/ChrisDonovan307.git
+cd site
 ```
 
+Install:
+
 ```sh
-# development
+npm install
+```
+
+Development:
+
+```sh
 npm run dev
 ```
 
+Build and preview:
 ```sh
-# build and deploy
 npm run build
 npm run preview
 ```
