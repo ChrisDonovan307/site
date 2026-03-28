@@ -20,15 +20,15 @@
         color: var(--color-brand-purple);
         transform: translateY(-3px);
     }
-    .spirit {
+    :global(.spirit) {
         filter: brightness(0) saturate(100%) invert(40%) sepia(26%) saturate(695%) hue-rotate(90deg) brightness(97%) contrast(86%);
-        height: 2.5rem;
+        height: 3rem;
         width: auto;
         transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
 
-    .spirit:hover {
+    :global(.spirit:hover) {
         filter: brightness(0) saturate(100%) invert(50%) sepia(7%) saturate(3064%) hue-rotate(280deg) brightness(89%) contrast(83%);
         transform: translateY(-3px);
     }

@@ -1,9 +1,10 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import SocialIcons from "$lib/SocialIcons.svelte"
+	import * as Carousel from "$lib/components/ui/carousel/index.js";
+ 	import * as Card from "$lib/components/ui/card/index.js";
 
 	let { data }: { data: PageData } = $props();
-
 </script>
 
 <h2>Home</h2>
@@ -20,19 +21,25 @@
 
 <h2>Projects</h2>
 
-
-{#each data.projects as { group, items }}
-	<h3>{group}</h3>
-	{#each items as { title, content, link }}
-		{#if items.length > 1}
-			<h4>{title}</h4>
-		{/if}
-		<ul class="list-disc pl-5 mb-4">
-			<li>{@html content}</li>
-			<li>{@html link}</li>
-		</ul>
-	{/each}
-{/each}
+<div class="project-card">                                                                                                                                  
+  {#each data.projects as { group, items }}
+    <h3>{group}</h3>
+      {#each items as { content, link, image }}
+        <a href={link} target="_blank">
+          <Card.Root class="bg-card-background rounded-lg border border-black mb-3">
+            <Card.Content>
+              <div class="flex flex-row gap-4 items-center">
+                {#if image}
+                  <img class="card-image" src="images/{image}" alt="alt-text">
+                {/if}
+                <p>{@html content}</p>
+              </div>
+            </Card.Content>
+          </Card.Root>
+        </a>
+      {/each}
+  {/each}
+</div>                                                                                                                                                       
 
 <style>
 	h2 {
@@ -43,11 +50,20 @@
 	h3 {
 		font-size: 1.5rem;
 		font-weight: 600;
+		margin-top: 1rem;
 		margin-bottom: 1rem;
 	}
-	h4 {
-		font-size: 1.25rem;
-		font-weight: 500;
-		margin-bottom: 1rem;
-	}
-</style>
+  .project-card :global([data-slot="card"]) {
+    transition: box-shadow 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    margin: 1rem;
+    cursor: pointer;
+  }
+  .project-card :global([data-slot="card"]:hover) {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);                                                                                                              
+    transform: translateY(-2px);
+  }
+  .project-card :global(.card-image) {
+    max-height: 100px;
+  }
+</style> 

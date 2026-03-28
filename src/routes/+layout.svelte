@@ -5,6 +5,7 @@
 	// import Toc from "$lib/TableOfContents.svelte";
 	import '@fortawesome/fontawesome-free/css/all.min.css'
 	import "@fontsource-variable/lora";
+	// This is a node module? Don't have code here
   	import Toc from 'svelte-toc'
 
 	let { children } = $props();
@@ -20,7 +21,8 @@
 	</main>
 	<Toc
 		title="On This Page"
-		--toc-width="15rem"
+		collapseSubheadings="h4"
+		--toc-width="20rem"
 		--toc-li-color="var(--color-foreground)"
 		--toc-li-hover-color="var(--color-brand-purple)"
 		--toc-li-hover-bg="transparent"
