@@ -8,7 +8,12 @@
 
 <div class="flex-1">
     <div class="justify-center flex">
-        <Button>Download CV</Button>
+        <a href="cv.pdf" download="christopher_donovan_cv.pdf">
+            <Button class="btn">
+                <i class="fa fa-download"></i>
+                Download CV
+            </Button>
+        </a>
     </div>
 
     <h2>Research Statement</h2>
