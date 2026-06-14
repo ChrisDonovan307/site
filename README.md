@@ -22,7 +22,12 @@ npm run dev
 ```
 
 Build and preview:
+
 ```sh
 npm run build
 npm run preview
 ```
+
+Things I keep forgetting:
+
+- `layout.css`

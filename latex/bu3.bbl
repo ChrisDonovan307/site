@@ -1,23 +1,28 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Bekee et~al.(2025{\natexlab{a}})Bekee, Donovan, Lawler, May, and
-  Taylor]{bekee2025OperationalizingEconomicSustainability}
-Barituka Bekee, Christopher Donovan, Tessa Lawler, Andrew May, and Josiah
-  Taylor.
-\newblock Operationalizing economic sustainability: {{A}} regional food systems
-  approach [{{Conference}} presentation: {{Northeast Agriculture}} and
-  {{Resource Economics Association}}], June 2025{\natexlab{a}}.
+\bibitem[Bekee et~al.(2025{\natexlab{a}})Bekee, Donovan, Lawler, May, and Taylor]{bekee2025OperationalizingEconomicSustainability}
+Barituka Bekee, Christopher Donovan, Tessa Lawler, Andrew May, and Josiah Taylor.
+\newblock Operationalizing economic sustainability: {A} regional food systems approach, June 2025{\natexlab{a}}.
+\newblock [Conference presentation]. Northeast Agriculture and Resource Economics Association, 2025, Burlington, VT, United States.
 
-\bibitem[Bekee et~al.(2025{\natexlab{b}})Bekee, Donovan`, Ritzenthaler, and
-  Taylor]{bekee2025OperationalizingSustainabilityRegional}
-Barituka Bekee, Christopher Donovan`, Cari Ritzenthaler, and Josiah Taylor.
-\newblock Operationalizing sustainability: {{A}} regional food systems approach
-  [{{Conference}} presentation: {{Agriculture}}, {{Food}}, and {{Human Values
-  Society}}], June 2025{\natexlab{b}}.
+\bibitem[Bekee et~al.(2025{\natexlab{b}})Bekee, Donovan, Ritzenthaler, and Taylor]{bekee2025OperationalizingSustainabilityRegional}
+Barituka Bekee, Christopher Donovan, Cari Ritzenthaler, and Josiah Taylor.
+\newblock Operationalizing sustainability: {A} regional food systems approach, June 2025{\natexlab{b}}.
+\newblock [Conference presentation]. Agriculture, Food, and Human Values Society, 2025, Corvallis, OR, United States.
+
+\bibitem[Donovan(2026)]{donovan_bee_2026}
+Christopher Donovan.
+\newblock Bee {Communities} on {Costa} {Rican} {Coffee} {Farms}: {A} {National} {Survey}, June 2026.
+\newblock [Conference presentation]. Agriculture, Food, and Human Values Society, 2026, Burlington, VT, United States.
+
+\bibitem[Donovan and Lawler(2026)]{donovan_inventory_2026}
+Christopher Donovan and Tessa Lawler.
+\newblock Inventory and {Evaluation} of {Metrics} for a {Sustainability} {Indicator} {Framwork} in the {Northeast} {U}.{S}. {Food} {System}, June 2026.
+\newblock [Conference presentation]. Agriculture, Food, and Human Values Society, 2026, Burlington, VT, United States.
 
 \end{thebibliography}
