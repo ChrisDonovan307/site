@@ -1,29 +1,21 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{2}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Donovan and Shrum(2025)]{donovan2025ExtremeWeatherEvents}
-Christopher Donovan and Trisha Shrum.
-\newblock Extreme {{Weather Events}}: {{Perception}}, {{Pro-Environmental
-  Behavior}}, and the {{Tools}} to {{Measure Them}}, January 2025.
-\newblock URL \url{https://doi.org/10.31219/osf.io/9zadu}.
+\bibitem[Donovan(2026)]{donovan2026BeeCommunitiesCosta}
+Christopher Donovan.
+\newblock Bee {{Communities}} on {{Costa Rican Coffee Farms}}: {{A National
+  Survey}}, June 2026.
 
-\bibitem[Donovan et~al.(2025)Donovan, {Chain-Guadarrama}, {Martinez-Salinas},
-  Aristizabal, and Ricketts]{donovan2025BeeDiversityCosta}
-Christopher Donovan, Adina {Chain-Guadarrama}, Alejandra {Martinez-Salinas},
-  Natalia Aristizabal, and Taylor Ricketts.
-\newblock Bee {{Diversity}} in {{Costa Rica}}: {{A National Survey}} of
-  {{Coffee Agroecosystems}}, April 2025.
-\newblock URL \url{https://doi.org/10.31219/osf.io/a4uv6_v1}.
-
-\bibitem[Shrum et~al.(2024)Shrum, Donovan, Bloch, Cripps, and
-  Boyson]{shrum2024REBLScoreDynamic}
-Trisha Shrum, Christopher Donovan, Sadie Bloch, Emma Cripps, and Ceclia Boyson.
-\newblock The {{REBL Score}}: {{A}} dynamic measure of pro-environmental
-  behavior, August 2024.
-\newblock URL \url{https://doi.org/10.31219/osf.io/w92se}.
+\bibitem[Donovan et~al.(2026)Donovan, Lawler, Loconte, Ericksen, Galford, and
+  McIntosh]{donovan2026InventoryEvaluationMetricsa}
+Christopher Donovan, Tessa Lawler, Isabella Loconte, Polly Ericksen, Gillian
+  Galford, and Matthew McIntosh.
+\newblock Inventory and {{Evaluation}} of {{Metrics}} for a {{Sustainability
+  Indicator Framework}} in the {{Northeast U}}.{{S}}. {{Food System}}.
+\newblock 2026.
 
 \end{thebibliography}
