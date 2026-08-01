@@ -11,21 +11,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24
-          cache: npm
+      - name: Install pnpm
+        uses: pnpm/action-setup@v6
+        with: 
+          version: 11
+          cache: true
 
       - name: Install dependencies
-        run: npm i
+        run: pnpm install
 
       - name: build
         env:
-          # no base path - using separate domina, not GH username
           BASE_PATH: ''
         run: |
-          npm run build
+          pnpm build
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
@@ -36,6 +35,8 @@ jobs:
   deploy:
     needs: build_site
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     permissions:
       pages: write
@@ -48,4 +49,4 @@ jobs:
     steps:
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4.0.5

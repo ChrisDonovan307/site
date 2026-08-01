@@ -12,20 +12,20 @@ cd site
 Install:
 
 ```sh
-npm install
+pnpm install
 ```
 
 Development:
 
 ```sh
-npm run dev
+pnpm run dev
 ```
 
 Build and preview:
 
 ```sh
-npm run build
-npm run preview
+pnpm build
+pnpm preview
 ```
 
 Things I keep forgetting:
