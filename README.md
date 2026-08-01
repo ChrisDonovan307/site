@@ -31,3 +31,4 @@ pnpm preview
 Things I keep forgetting:
 
 - `layout.css`
+- Tailwind: 4 = 1rem = 16px

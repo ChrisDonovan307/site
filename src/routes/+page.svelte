@@ -41,17 +41,6 @@
 </div>
 
 <style>
-  h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
-  h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
   .project-card :global([data-slot='card']) {
     transition: box-shadow 0.3s ease-in-out;
     transition: transform 0.2s ease-in-out;
