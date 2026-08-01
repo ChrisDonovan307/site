@@ -29,7 +29,7 @@
 
   <h2>Education</h2>
 
-  <div style="display: grid; grid-template-columns: 70% 30%; gap: 1rem 2rem; align-items: start;">
+  <div class="resume-section grid-cols-[70%30%]">
     <div>
       <strong>M.S., Community Development and Applied Economics</strong><br />
       Department of Community Development and Applied Economics<br />
@@ -47,7 +47,7 @@
     <div>2024</div>
 
     <div>
-      <strong>B.S., Environmental Science, Emphasis in Conservation Biology</strong><br />
+      <strong>B.S., Environmental Studies, Emphasis in Conservation Biology</strong><br />
       Prescott College<br />
       Prescott, Arizona
     </div>
@@ -56,7 +56,7 @@
 
   <h2>Work History</h2>
 
-  <div style="display: grid; grid-template-columns: 60% 40%; gap: 1rem 2rem; align-items: start;">
+  <div class="resume-section grid-cols-[60%40%]">
     <div>
       <strong>Food Systems Data Scientist</strong><br />
       Food Systems Research Institute<br />
@@ -136,6 +136,11 @@
   }
   h3 {
     font-size: 1.4rem;
+  }
+  .resume-section {
+    display: grid;
+    gap: 1rem 2rem;
+    align-items: start;
   }
   :global(.csl-entry) {
     margin-bottom: 1rem;

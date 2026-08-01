@@ -2,5 +2,6 @@
 	"files.associations": {
 		"*.css": "tailwindcss"
 	},
-	"editor.formatOnSave": true
+	"editor.formatOnSave": true,
+	"latex-workshop.latex.recipe.default": "xelatex"
 }
