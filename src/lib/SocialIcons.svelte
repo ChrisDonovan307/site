@@ -2,7 +2,7 @@
 	let { socials } = $props();
 </script>
 
-<div style="display: flex; justify-content: center; gap: 20px;">
+<div class="flex flex-wrap justify-center gap-4">
     {#each socials as {link, label, image}}
         <a href="{link}" aria-label="{label}" target="_blank">
             {@html image}

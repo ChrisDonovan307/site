@@ -29,84 +29,104 @@
 
   <h2>Education</h2>
 
-  <div class="resume-section grid-cols-[70%30%]">
-    <div>
-      <strong>M.S., Community Development and Applied Economics</strong><br />
-      Department of Community Development and Applied Economics<br />
-      University of Vermont<br />
-      Burlington, Vermont<br />
+  <div>
+    <div class="job">
+      <strong>M.S., Community Development and Applied Economics</strong>
+      <p class="date">2024</p>
+      <p>
+        Department of Community Development and Applied Economics<br />
+        University of Vermont<br />
+        Burlington, Vermont
+      </p>
     </div>
-    <div>2024</div>
 
-    <div>
-      <strong>Graduate Certificate, Ecological Economics</strong><br />
-      Department of Community Development and Applied Economics<br />
-      University of Vermont<br />
-      Burlington, Vermont<br />
+    <div class="job">
+      <strong>Graduate Certificate, Ecological Economics</strong>
+      <p class="date">2024</p>
+      <p>
+        Department of Community Development and Applied Economics<br />
+        University of Vermont<br />
+        Burlington, Vermont
+      </p>
     </div>
-    <div>2024</div>
 
-    <div>
-      <strong>B.S., Environmental Studies, Emphasis in Conservation Biology</strong><br />
-      Prescott College<br />
-      Prescott, Arizona
+    <div class="job">
+      <strong>B.S., Environmental Studies, Emphasis in Conservation Biology</strong>
+      <p class="date">2019</p>
+      <p>
+        Prescott College<br />
+        Prescott, Arizona
+      </p>
     </div>
-    <div>2019</div>
   </div>
 
   <h2>Work History</h2>
 
-  <div class="resume-section grid-cols-[60%40%]">
-    <div>
-      <strong>Food Systems Data Scientist</strong><br />
-      Food Systems Research Institute<br />
-      University of Vermont<br />
-      Burlington, Vermont
+  <div class="space-y-4">
+    <div class="job">
+      <strong>Food Systems Data Scientist</strong>
+      <p class="date">September 2024 - Present</p>
+      <p>
+        Food Systems Research Institute<br />
+        University of Vermont<br />
+        Burlington, Vermont
+      </p>
     </div>
-    <div>September 2024 – Present</div>
 
-    <div>
-      <strong>Graduate Research Assistant</strong><br />
-      Community Development and Applied Economics<br />
-      University of Vermont<br />
-      Burlington, Vermont
+    <div class="job">
+      <strong>Graduate Research Assistant</strong>
+      <p class="date">September 2022 - September 2024</p>
+      <p>
+        Community Development and Applied Economics<br />
+        University of Vermont<br />
+        Burlington, Vermont
+      </p>
     </div>
-    <div>September 2022 - September 2024</div>
 
-    <div>
-      <strong>Rare Plant Survey Crew Leader</strong><br />
-      Institute for Applied Ecology<br />
-      Boise, Idaho
+    <div class="job">
+      <strong>Rare Plant Survey Crew Leader</strong>
+      <p class="date">April 2022 - August 2022</p>
+      <p>
+        Institute for Applied Ecology<br />
+        Boise, Idaho
+      </p>
     </div>
-    <div>April 2022 - August 2022</div>
 
-    <div>
-      <strong>Precision Restoration Technician</strong><br />
-      The Nature Conservancy<br />
-      Lander, Wyoming
+    <div class="job">
+      <strong>Precision Restoration Technician</strong>
+      <p class="date">April 2020 - April 2022</p>
+      <p>
+        The Nature Conservancy<br />
+        Lander, Wyoming
+      </p>
     </div>
-    <div>April 2020 - April 2022</div>
 
-    <div>
-      <strong>Environmental Services Intern</strong><br />
-      Ocotillo Wells SVRA<br />
-      Ocotillo Wells, California
+    <div class="job">
+      <strong>Environmental Services Intern</strong>
+      <p class="date">November 2019 - March 2020</p>
+      <p>
+        Ocotillo Wells SVRA<br />
+        Ocotillo Wells, California
+      </p>
     </div>
-    <div>November 2019 - March 2020</div>
 
-    <div>
-      <strong>Seed Technician</strong><br />
-      Institute for Applied Ecology<br />
-      Silver City, New Mexico
+    <div class="job">
+      <strong>Seed Technician</strong>
+      <p class="date">August 2019 - November 2019</p>
+      <p>
+        Institute for Applied Ecology<br />
+        Silver City, New Mexico
+      </p>
     </div>
-    <div>August 2019 - November 2019</div>
 
-    <div>
-      <strong>Botanical Field Technician</strong><br />
-      Great Basin Institute<br />
-      Las Vegas, Nevada
+    <div class="job">
+      <strong>Botanical Field Technician</strong>
+      <p class="date">May 2019 - August 2019</p>
+      <p>
+        Great Basin Institute<br />
+        Las Vegas, Nevada
+      </p>
     </div>
-    <div>May 2019 - August 2019</div>
   </div>
 
   <h2>Publications</h2>
@@ -137,11 +157,6 @@
   h3 {
     font-size: 1.4rem;
   }
-  .resume-section {
-    display: grid;
-    gap: 1rem 2rem;
-    align-items: start;
-  }
   :global(.csl-entry) {
     margin-bottom: 1rem;
   }
@@ -153,5 +168,22 @@
   :global([data-slot='button']:hover) {
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
+  }
+  .job {
+    margin-bottom: 1rem;
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      column-gap: 2rem;
+    }
+  }
+  .date {
+    font-style: italic;
+    margin-bottom: 0rem;
+    @media (min-width: 768px) {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+      font-style: normal;
+    }
   }
 </style>
